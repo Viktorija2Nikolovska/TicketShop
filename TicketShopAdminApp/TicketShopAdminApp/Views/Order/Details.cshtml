@@ -5,7 +5,7 @@
 }
 
 
-@model EShopAdminApplication.Models.Order
+@model TicketShopAdminApp.Models.Order
 
 <div class="container">
 
@@ -13,9 +13,9 @@
         <a class="btn btn-success">@Model.User.UserName</a>
     </p>
 
-    @for (int i = 0; i < Model.ProductInOrders.Count(); i++)
+    @for (int i = 0; i < Model.TicketInOrders.Count(); i++)
     {
-        var item = Model.ProductInOrders.ElementAt(i).OrderedProduct;
+        var item = Model.TicketInOrders.ElementAt(i).OrderedTicket;
 
         if (i % 3 == 0)
         {
@@ -24,10 +24,10 @@
 
             <div class="col-md-3 m-4">
                 <div class="card" style="width: 18rem; height: 30rem;">
-                    <img class="card-img-top" style="height: 70%" src="@item.ProductImage" alt="Card image cap">
+                    <img class="card-img-top" style="height: 70%" src="@item.TicketImage" alt="Card image cap">
                     <div class="card-body">
-                        <h3>@item.ProductName</h3>
-                        <p>@item.ProductDescription</p>
+                        <h3>@item.TicketName</h3>
+                        <p>@item.TicketDescription</p>
                     </div>
 
                 </div>

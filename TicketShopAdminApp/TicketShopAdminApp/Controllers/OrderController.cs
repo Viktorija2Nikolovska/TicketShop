@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ClosedXML.Excel;
+using GemBox.Document;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -87,8 +89,8 @@ namespace TicketShopAdminApp.Controllers
 
                     for (int p = 0; p < item.TicketInOrders.Count(); p++)
                     {
-                        worksheet.Cell(1, p + 3).Value = "Product-" + (p + 1);
-                        worksheet.Cell(i + 1, p + 3).Value = item.TicketInOrders.ElementAt(p).OrderedProduct.ProductName;
+                        worksheet.Cell(1, p + 3).Value = "Ticket-" + (p + 1);
+                        worksheet.Cell(i + 1, p + 3).Value = item.TicketInOrders.ElementAt(p).OrderedTicket.TicketName;
                     }
                 }
 
@@ -133,14 +135,14 @@ namespace TicketShopAdminApp.Controllers
 
             var totalPrice = 0.0;
 
-            foreach (var item in result.ProductInOrders)
+            foreach (var item in result.TicketInOrders)
             {
-                totalPrice += item.Quantity * item.OrderedProduct.ProductPrice;
-                sb.AppendLine(item.OrderedProduct.ProductName + " with quantity of: " + item.Quantity + " and price of: " + item.OrderedProduct.ProductPrice + "$");
+                totalPrice += item.Quantity * item.OrderedTicket.TicketPrice;
+                sb.AppendLine(item.OrderedTicket.TicketName + " with quantity of: " + item.Quantity + " and price of: " + item.OrderedTicket.TicketPrice + "$");
             }
 
 
-            document.Content.Replace("{{ProductList}}", sb.ToString());
+            document.Content.Replace("{{TicketList}}", sb.ToString());
             document.Content.Replace("{{TotalPrice}}", totalPrice.ToString() + "$");
 
 
