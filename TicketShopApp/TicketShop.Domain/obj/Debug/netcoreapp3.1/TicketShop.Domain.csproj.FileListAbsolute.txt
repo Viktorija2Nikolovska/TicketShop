@@ -1,0 +1,9 @@
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\bin\Debug\netcoreapp3.1\TicketShop.Domain.deps.json
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\bin\Debug\netcoreapp3.1\TicketShop.Domain.dll
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\bin\Debug\netcoreapp3.1\TicketShop.Domain.pdb
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\obj\Debug\netcoreapp3.1\TicketShop.Domain.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\obj\Debug\netcoreapp3.1\TicketShop.Domain.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\obj\Debug\netcoreapp3.1\TicketShop.Domain.AssemblyInfo.cs
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\obj\Debug\netcoreapp3.1\TicketShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\obj\Debug\netcoreapp3.1\TicketShop.Domain.dll
+C:\Users\PC\Desktop\Is-homework\TicketShopApp\TicketShop.Domain\obj\Debug\netcoreapp3.1\TicketShop.Domain.pdb
